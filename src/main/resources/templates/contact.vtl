@@ -1,0 +1,12 @@
+<h1>$contact.getName() Entries:</h1>
+
+<ul>
+  #foreach($entry in $contact.getEntries())
+   <li>$entry.getAddress()</li>
+   <li>$entry.getPhoneNumber()</li>
+   <li>$entry.getEmail()</li>
+  #end
+</ul>
+
+<a href="/contacts/$contact.getId()/entries/new">Add a new entry</a>
+<a href="/contacts">All contacts</a>

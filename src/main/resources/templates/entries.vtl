@@ -1,0 +1,15 @@
+<h1>Entry list!</h1>
+
+#if ($entries)
+  <ul>
+    #foreach ($entry in $entries)
+      <li><a href="/entry/$entry.getId()">$entry.getAddress()</a></li>
+      <li><a href="/entry/$entry.getId()">$entry.getPhoneNumber()</a></li>
+      <li><a href="/entry/$entry.getId()">$entry.getEmail()</a></li>
+    #end
+  </ul>
+#else
+  <p>No entries!</p>
+#end
+
+<a href="/entries/new">Add New Entry</a>

@@ -1,0 +1,7 @@
+<h1>All contacts</h1>
+<ul>
+  #foreach ($contact in $contacts)
+    <li><a href="/contacts/$contact.getId()">$contact.getName()</a></li>
+  #end
+</ul>
+<a href="/contacts/new">Add New Contact</a>

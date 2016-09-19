@@ -1,0 +1,22 @@
+<h1>Add a entry to $contact.getName()</h1>
+
+<form action="/entries" method="post">
+  <input id="contactId" name="contactId" type="hidden" value="$contact.getId()">
+
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input id="address" name="address" type="text" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="phoneNumber">Phone Number</label>
+    <input id="phoneNumber" name="phoneNumber" type="text" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Task</button>
+</form>
